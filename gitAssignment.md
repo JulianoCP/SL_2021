@@ -93,7 +93,7 @@ git log --graph --all
 ```
 git checkout master
 git branch
-git merge feature-foo
+git merge feature-foo -m "merge para a master"
 ```
 
 5. Escreva um comando (ou sequência) para (i) criar um novo ramo chamado `math` (do` master`)
@@ -127,18 +127,19 @@ System.out.println("Hello World")
 git add *
 git commit -a -m "adicionando print no arquivo B.java da master"
 git checkout master
-git merge 
+git merge -m "merge para a master"
 
+CONFLITO (conteúdo): conflito de mesclagem em B.java
 ```
    
 10. Escreva um conjunto de comandos para abortar a mesclagem
 ```
-git reset
+git merge --abort
 ```
    
 11. Agora repita o item 9, mas prossiga com a mesclagem manual (Editando B.java). Todas as funções implementadas são necessárias. Explique o seu procedimento
 ```
-vim B.Java
+edita o arquivo B.Java
 Excluir as linhas indesejadas
 ```
 
